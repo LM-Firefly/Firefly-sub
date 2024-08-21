@@ -1,9 +1,11 @@
 {
   "name": "SubConverter",
   "description": "Run SubConverter on Heroku.",
-  "keywords": ["subconverter"],
-  "website": "https://github.com/tindy2013/heroku-subconverter",
-  "repository": "https://github.com/tindy2013/subconverter",
+  "keywords": [
+    "subconverter"
+  ],
+  "website": "https://github.com/LM-Firefly/Firefly-sub",
+  "repository": "https://github.com/LM-Firefly/subconverter",
   "stack": "container",
   "env": {
     "API_MODE": {
@@ -12,7 +14,7 @@
     },
     "API_TOKEN": {
       "description": "The access token for accessing local files and modifying settings.",
-      "generator": "secret"
+      "generator": "password"
     },
     "MANAGED_PREFIX": {
       "description": "Address prefix used for generating RULE-SET and provider URLs. On Heroku this field should be \"https://{App name}.herokuapp.com\" (Replace \"{App name}\" with the one you set above).",
